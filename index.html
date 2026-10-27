@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b13">
+  <meta name="description" content="Narendra Reddy — Python Developer and Data Analytics enthusiast.">
+  <title>Narendra Reddy | Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="navbar" id="navbar">
+    <a class="logo" href="#home"><span class="logo-icon">N<span>.</span></span><span>NARENDRA<span class="logo-light"> REDDY</span></span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false"><i data-lucide="menu"></i></button>
+    <nav class="nav-menu" id="navMenu">
+      <a href="#home" class="nav-item active">Home</a>
+      <a href="#about" class="nav-item">About</a>
+      <a href="#skills" class="nav-item">Skills</a>
+      <a href="#projects" class="nav-item">Projects</a>
+      <a href="#experience" class="nav-item">Experience</a>
+      <a href="#contact" class="nav-item">Contact</a>
+      <a class="nav-contact" href="#contact">Let's talk <i data-lucide="arrow-up-right"></i></a>
+      <button id="themeBtn" class="theme-btn" aria-label="Toggle color theme"><i data-lucide="sun-moon"></i></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-content reveal">
+        <p class="overline">ABOUT ME</p>
+        <h1>About <span class="accent-text">me.</span></h1>
+        <h2 class="hero-role"><span id="roleText">Data Analyst</span><span class="typing-caret">_</span></h2>
+        <p class="hero-desc">I’m Narendra Reddy, a Computer Science and Engineering graduate who enjoys working with Python, building useful applications, and turning data into meaningful insights. I’m always learning, building projects, and improving my skills.</p>
+      </div>
+      <div class="hero-photo-wrap reveal" aria-label="Narendra Reddy portrait">
+        <div class="hero-photo-ring">
+          <img src="assets/narendra-profile.png" alt="Professional portrait of Narendra Reddy">
+        </div>
+        <span class="photo-orbit orbit-one"></span>
+        <span class="photo-orbit orbit-two"></span>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="about">
+      <div class="section-heading reveal"><span class="section-index">01 / ABOUT</span><h2>A little about <span class="accent-text">me.</span></h2><p>Curiosity drives me. Practical solutions keep me going.</p></div>
+      <div class="about-layout">
+        <div class="about-card reveal"><div class="about-card-mark">N<span>.</span></div><div class="about-card-text"><span class="mini-overline">THE SHORT VERSION</span><h3>Developer mindset.<br><span class="accent-text">Analytical thinking.</span></h3><p>I'm a Computer Science and Engineering graduate interested in Python development, backend systems, and data analytics. I enjoy solving problems, learning tools by building projects, and presenting information in a way people can act on.</p><p>I'm looking for opportunities where I can contribute, learn from a team, and grow through real-world work.</p><a class="inline-link" href="#contact">More about me <i data-lucide="arrow-up-right"></i></a></div></div>
+        <div class="about-facts reveal">
+          <div class="fact"><span class="fact-icon"><i data-lucide="graduation-cap"></i></span><div><small>EDUCATION</small><strong>B.Tech · Computer Science</strong><p>Lendi Institute of Engineering and Technology</p></div></div>
+          <div class="fact"><span class="fact-icon"><i data-lucide="map-pin"></i></span><div><small>BASED IN</small><strong>Andhra Pradesh, India</strong><p>Open to entry-level opportunities</p></div></div>
+          <div class="fact"><span class="fact-icon"><i data-lucide="target"></i></span><div><small>INTERESTS</small><strong>Python · Data · Backend</strong><p>Applications with practical impact</p></div></div>
+          <div class="fact fact-highlight"><span class="fact-icon"><i data-lucide="sparkles"></i></span><div><small>MY APPROACH</small><strong>Learn by building</strong><p>Keep things useful, clear, and maintainable.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="skills">
+      <div class="section-heading centered reveal"><span class="section-index">02 / TOOLKIT</span><h2>Skills & <span class="accent-text">technologies.</span></h2><p>Tools I use to develop, analyze, and communicate.</p></div>
+      <div class="skill-tabs reveal"><button class="skill-tab active" data-filter="all">All</button><button class="skill-tab" data-filter="dev">Development</button><button class="skill-tab" data-filter="data">Data & BI</button><button class="skill-tab" data-filter="tools">Tools</button></div>
+      <div class="skill-grid">
+        <article class="skill-card reveal" data-type="dev"><span class="skill-symbol python">Py</span><div><h3>Python</h3><p>Programming & problem solving</p></div><span class="skill-number"></span></article>
+        <article class="skill-card reveal" data-type="dev"><span class="skill-symbol"><i data-lucide="layers"></i></span><div><h3>FastAPI</h3><p>Backend APIs & services</p></div><span class="skill-number"></span></article>
+        <article class="skill-card reveal" data-type="dev"><span class="skill-symbol"><i data-lucide="app-window"></i></span><div><h3>Streamlit</h3><p>Interactive Python apps</p></div><span class="skill-number"></span></article>
+        <article class="skill-card reveal" data-type="data"><span class="skill-symbol"><i data-lucide="database"></i></span><div><h3>SQL & MySQL</h3><p>Queries & relational data</p></div><span class="skill-number"></span></article>
+        <article class="skill-card reveal" data-type="data"><span class="skill-symbol"><i data-lucide="table-2"></i></span><div><h3>Pandas & NumPy</h3><p>Data preparation & analysis</p></div><span class="skill-number"></span></article>
+        <article class="skill-card reveal" data-type="data"><span class="skill-symbol"><i data-lucide="chart-no-axes-combined"></i></span><div><h3>Power BI</h3><p>Dashboards, reports & KPIs</p></div><span class="skill-number"></span></article>
+        <article class="skill-card reveal" data-type="data"><span class="skill-symbol"><i data-lucide="file-spreadsheet"></i></span><div><h3>Excel</h3><p>Reporting & data analysis</p></div><span class="skill-number"></span></article>
+        <article class="skill-card reveal" data-type="data"><span class="skill-symbol"><i data-lucide="chart-spline"></i></span><div><h3>Matplotlib</h3><p>Data visualization</p></div><span class="skill-number"></span></article>
+        <article class="skill-card reveal" data-type="tools"><span class="skill-symbol"><i data-lucide="git-branch"></i></span><div><h3>Git & GitHub</h3><p>Version control & collaboration</p></div><span class="skill-number"></span></article>
+        <article class="skill-card reveal" data-type="tools"><span class="skill-symbol"><i data-lucide="terminal"></i></span><div><h3>VS Code</h3><p>Development environment</p></div><span class="skill-number"></span></article>
+        <article class="skill-card reveal" data-type="dev"><span class="skill-symbol"><i data-lucide="boxes"></i></span><div><h3>OOP & SDLC</h3><p>Software fundamentals</p></div><span class="skill-number"></span></article>
+        <article class="skill-card reveal" data-type="tools"><span class="skill-symbol"><i data-lucide="brain-circuit"></i></span><div><h3>AI Tools</h3><p>AI-assisted productivity</p></div><span class="skill-number"></span></article>
+      </div>
+      <p class="tiny-note">Skill cards are grouped by area; they are not formal proficiency scores.</p>
+    </section>
+
+    <section class="section-wrap section-block" id="projects">
+      <div class="section-heading reveal"><span class="section-index">03 / SELECTED WORK</span><h2>Things I've <span class="accent-text">built.</span></h2><p>A mix of application development and business intelligence.</p></div>
+      <div class="project-filters reveal"><button class="project-filter active" data-project-filter="all">All projects <span>02</span></button><button class="project-filter" data-project-filter="development">Development</button><button class="project-filter" data-project-filter="analytics">Analytics</button></div>
+      <div class="projects-grid">
+        <article class="project-card project-large reveal" data-project-type="development">
+          <div class="project-image hospital-image"><div class="browser-frame"><div class="browser-top"><i></i><i></i><i></i><span>hospital-system / overview</span></div><div class="hospital-dashboard"><aside><b>H+</b><i></i><i></i><i></i><i></i></aside><div class="hospital-content"><span class="mock-heading">Patient overview</span><div class="mock-metrics"><div><small>Total patients</small><b>1,248</b></div><div><small>Appointments</small><b>86</b></div><div><small>Doctors</small><b>24</b></div></div><div class="mock-lines"><i></i><i></i><i></i><i></i></div></div></div></div><span class="image-caption">PYTHON · FASTAPI · STREAMLIT</span></div>
+          <div class="project-info"><div class="project-meta"><span>01 — WEB APPLICATION</span><span class="project-dot"></span></div><h3>Hospital Management System</h3><p>A Python-based application concept for organizing hospital information and managing patient records with create, view, update, and related workflows.</p><div class="tag-row"><span>Python</span><span>FastAPI</span><span>Streamlit</span></div><a class="project-link" href="https://github.com/Narendra-503" target="_blank" rel="noreferrer">View on GitHub <i data-lucide="arrow-up-right"></i></a></div>
+        </article>
+        <article class="project-card reveal" data-project-type="analytics">
+          <div class="project-image analytics-image"><div class="bi-mock"><div class="bi-top"><b>RESERVATION INSIGHTS</b><i data-lucide="chart-no-axes-combined"></i></div><div class="bi-kpis"><span><small>REVENUE</small><b>₹ 2.4M</b></span><span><small>BOOKINGS</small><b>1,284</b></span></div><div class="chart-bars"><i style="--h:40%"></i><i style="--h:62%"></i><i style="--h:52%"></i><i style="--h:80%"></i><i style="--h:68%"></i><i style="--h:94%"></i><i style="--h:76%"></i><i style="--h:100%"></i></div><div class="bi-legend"><span></span> Monthly booking trend</div></div><span class="image-caption">POWER BI · ANALYTICS</span></div>
+          <div class="project-info"><div class="project-meta"><span>02 — BUSINESS INTELLIGENCE</span><span class="project-dot green"></span></div><h3>Hotel Reservation Operations Analytics</h3><p>An interactive dashboard to explore booking patterns, revenue trends, cancellations, and operational KPIs after data cleaning and transformation.</p><div class="tag-row"><span>Power BI</span><span>Data Cleaning</span><span>KPIs</span></div><a class="project-link" href="https://github.com/Narendra-503" target="_blank" rel="noreferrer">View on GitHub <i data-lucide="arrow-up-right"></i></a></div>
+        </article>
+      </div>
+      <p class="tiny-note">Project links open your GitHub profile for now. Replace them with direct repository URLs when available.</p>
+    </section>
+
+    <section class="section-wrap section-block" id="experience">
+      <div class="section-heading centered reveal"><span class="section-index">04 / JOURNEY</span><h2>Experience & <span class="accent-text">education.</span></h2><p>Experiences and learning that have shaped my path so far.</p></div>
+      <div class="journey-grid">
+        <div class="journey-column"><h3 class="column-title"><i data-lucide="briefcase-business"></i> Experience</h3>
+          <div class="timeline">
+            <article class="timeline-item reveal"><span class="timeline-point"></span><span class="timeline-date">JUN 2026 — SEP 2026</span><div class="timeline-card"><span class="timeline-type">INTERNSHIP</span><h4>Web Developer Intern</h4><p class="timeline-company">Zidio Development</p><ul><li>Contributed to responsive web application development.</li><li>Worked on reusable UI components, debugging, and performance improvements.</li><li>Participated in code reviews and Agile workflows.</li></ul></div></article>
+            <article class="timeline-item reveal"><span class="timeline-point"></span><span class="timeline-date">OCT 2025 — DEC 2025</span><div class="timeline-card"><span class="timeline-type">VIRTUAL INTERNSHIP</span><h4>GEN-AI Virtual Internship</h4><p class="timeline-company">AWS Academy</p><p>Explored Generative AI concepts, prompting, and practical AI-assisted workflows.</p></div></article>
+          </div>
+        </div>
+        <div class="journey-column"><h3 class="column-title"><i data-lucide="graduation-cap"></i> Education</h3>
+          <div class="timeline education-timeline">
+            <article class="timeline-item reveal"><span class="timeline-point"></span><span class="timeline-date">2022 — 2026</span><div class="timeline-card"><span class="timeline-type">BACHELOR'S DEGREE</span><h4>B.Tech — Computer Science and Engineering</h4><p class="timeline-company">Lendi Institute of Engineering and Technology, Vizianagaram</p><div class="grade-pill">CGPA <b>8.03 / 10</b></div></div></article>
+            <article class="timeline-item reveal"><span class="timeline-point"></span><span class="timeline-date">2020 — 2022</span><div class="timeline-card"><span class="timeline-type">INTERMEDIATE · MPC</span><h4>Narayana Junior College</h4><p class="timeline-company">Paradesipalem</p><div class="grade-pill">Percentage <b>91%</b></div></div></article>
+          </div>
+        </div>
+      </div>
+      <div class="certifications reveal"><div class="cert-heading"><span class="section-index">ALWAYS LEARNING</span><h3>Certifications & activities</h3></div><div class="cert-list">
+        <div class="cert-item"><span class="cert-symbol"><i data-lucide="badge-check"></i></span><div><b>Python Foundation</b><small>Infosys Springboard</small></div><span class="cert-arrow">↗</span></div>
+        <div class="cert-item"><span class="cert-symbol"><i data-lucide="monitor-check"></i></span><div><b>HTML5 & CSS Fundamentals</b><small>edX</small></div><span class="cert-arrow">↗</span></div>
+        <div class="cert-item"><span class="cert-symbol"><i data-lucide="languages"></i></span><div><b>Step English Course</b><small>The Hindu Group</small></div><span class="cert-arrow">↗</span></div>
+        <div class="cert-item"><span class="cert-symbol"><i data-lucide="users"></i></span><div><b>Smart India Hackathon</b><small>Participant · 2024</small></div><span class="cert-arrow">↗</span></div>
+      </div></div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="section-wrap contact-wrap">
+        <div class="contact-copy reveal"><span class="section-index">05 / CONTACT</span><h2>Have an idea?<br><span class="accent-text">Let's connect.</span></h2><p>I'm open to entry-level roles, collaborations, and conversations about Python development and data analytics.</p><div class="contact-socials"><a href="https://github.com/Narendra-503" target="_blank" rel="noreferrer"><i data-lucide="github"></i> GitHub</a><a href="https://www.linkedin.com/in/narendra-reddy-435856259" target="_blank" rel="noreferrer"><i data-lucide="linkedin"></i> LinkedIn</a></div></div>
+        <form class="contact-form reveal" id="contactForm"><div class="form-top"><span class="form-dot"></span><span>QUICK MESSAGE</span></div><label>Name<input id="name" type="text" placeholder="Your name" required></label><label>Email<input id="email" type="email" placeholder="you@example.com" required></label><label>Message<textarea id="message" rows="4" placeholder="Tell me what you have in mind..." required></textarea></label><button class="btn btn-main" type="submit">Prepare email <i data-lucide="arrow-up-right"></i></button><p class="form-note" id="formNote">This opens your email application with a draft; it doesn't store or send messages itself.</p></form>
+      </div>
+    </section>
+  </main>
+
+  <section class="find-me" aria-label="Find me online">
+    <div class="find-me-inner">
+      <h2>FIND ME ON</h2>
+      <p>Feel free to <span>connect</span> with me</p>
+      <div class="find-socials">
+        <a href="https://github.com/Narendra-503" target="_blank" rel="noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.76-.24.76-.53v-2.08c-3.1.67-3.76-1.31-3.76-1.31-.5-1.28-1.24-1.62-1.24-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.23.93.1-.72.39-1.21.7-1.49-2.48-.28-5.09-1.24-5.09-5.52 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.05 1.15a10.6 10.6 0 0 1 5.55 0c2.11-1.45 3.05-1.15 3.05-1.15.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.29-2.61 5.23-5.1 5.51.4.35.75 1.03.75 2.08V22c0 .29.2.63.77.52A11.1 11.1 0 0 0 12 .9Z"/></svg></a>
+        <a href="https://www.linkedin.com/in/narendra-reddy-435856259" target="_blank" rel="noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.26 2.37 4.26 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z"/></svg></a>
+        <a href="mailto:narendrareddy07012005@gmail.com" aria-label="Email Narendra"><i data-lucide="mail"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="narendra-footer" aria-label="Portfolio footer">
+    <p class="footer-credit">Designed and Developed by <strong>Narendra Reddy</strong></p>
+    <p class="footer-copyright">Copyright © 2026 Narendra Reddy</p>
+    <div class="footer-links" aria-label="Social links">
+      <a href="https://github.com/Narendra-503" target="_blank" rel="noreferrer" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.76-.24.76-.53v-2.08c-3.1.67-3.76-1.31-3.76-1.31-.5-1.28-1.24-1.62-1.24-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.23.93.1-.72.39-1.21.7-1.49-2.48-.28-5.09-1.24-5.09-5.52 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.05 1.15a10.6 10.6 0 0 1 5.55 0c2.11-1.45 3.05-1.15 3.05-1.15.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.29-2.61 5.23-5.1 5.51.4.35.75 1.03.75 2.08V22c0 .29.2.63.77.52A11.1 11.1 0 0 0 12 .9Z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/narendra-reddy-435856259" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.26 2.37 4.26 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z"/></svg>
+      </a>
+      <a href="mailto:narendrareddy07012005@gmail.com" aria-label="Email Narendra Reddy">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5h18A1.5 1.5 0 0 1 22.5 7v10a1.5 1.5 0 0 1-1.5 1.5H3A1.5 1.5 0 0 1 1.5 17V7A1.5 1.5 0 0 1 3 5.5Zm0 2v.3l9 5.8 9-5.8v-.3H3Zm18 9V10l-8.46 5.45a1 1 0 0 1-1.08 0L3 10v6.5h18Z"/></svg>
+      </a>
+    </div>
+  </footer>
+  <button class="to-top" id="toTop" aria-label="Back to top"><i data-lucide="arrow-up"></i><svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="19"></circle></svg></button>
+</body>
+</html>
